@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage[12pt]{extsizes}
+\usepackage{fancyvrb}
+\usepackage{indentfirst}
+\usepackage[
+  left=2cm, right=2cm, top=2cm, bottom=2cm, headsep=0.2cm, footskip=0.6cm, bindingoffset=0cm
+]{geometry}
+\usepackage[english,russian]{babel}
+
+\begin{document}
+\section*{Вариант 22}
+
+Рассмотрим дискретную временную шкалу 
+$T = \{t_0 < t_1 < \dots < t_N\}$, 
+в узлах которой заданы значения двух показателей: 
+$\{q(t_k)\}$ (например, объёма спроса, объёма ВВП и пр.), и 
+$\{p(t_k)\}$ (цены, объёма трудовых или капитальных ресурсов и пр.), 
+$k = 0, \dots, N$. 
+
+Считаем, что 
+\[
+\min_{k=0,\dots,N} p(t_k) = p(t_0) < \min_{k=1,\dots,N} p(t_k)
+\quad \text{или} \quad
+\max_{k=0,\dots,N} p(t_k) = p(t_0) > \max_{k=1,\dots,N} p(t_k),
+\]
+\[
+\min_{k=0,\dots,N} q(t_k) = q(t_0) < \min_{k=1,\dots,N} q(t_k)
+\quad \text{или} \quad
+\max_{k=0,\dots,N} q(t_k) = q(t_0) > \max_{k=1,\dots,N} q(t_k).
+\]
+
+Введём в рассмотрение нормированные индексы, соответственно, для $k = 0, \dots, N$, 
+взяв в качестве базы индексирования начальные значения показателя в точке $t_0$:
+\begin{equation}
+I_q(t_k) = \frac{q(t_k)}{q(t_0)},
+\end{equation}
+\begin{equation}
+I_p(t_k) = \frac{p(t_k)}{p(t_0)}.
+\end{equation}
+
+Вычислим точечную эластичность показателя $q$ относительно показателя $p$ 
+для каждого $k = 0, \dots, N$ по формуле:
+\begin{equation}
+E(t_k) = \frac{I_q(t_k) - 1}{I_p(t_k) - 1} = \frac{\Delta q / q}{\Delta p / p}.
+\end{equation}
+
+\end{document}
