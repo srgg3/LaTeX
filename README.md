@@ -8,6 +8,6 @@
 
 - задание 2 — Формулы в формате LaTeX.
 
-❌ В каталоге "Task 3 — Completion of the reporting work" содержится:
+✅ В каталоге "Task 3 — Completion of the reporting work" содержится:
 
 - задание 3 — Оформление отчётной работы.
